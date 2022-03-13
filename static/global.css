@@ -1,5 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Sansita+Swashed:wght@300&display=swap');
+
+:root {
+	--font-heading: 'Sansita Swashed', sans-serif;
+	--font-text: 'Montserrat', sans-serif;
+	--font-accent: 'Inconsolata', 'Courier New';
+
+	--clr-pale-gold: paleGoldenrod;
+	--clr-magenta: Magenta;
+	--clr-pale-green: paleGreen;
+	--clr-dark-slate-blue: #221766;
+	--clr-black: #000;
+	--clr-white: #fff;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--clr-dark-slate-blue);
+}
+
+/* Fonts */
+h1,
+h2,
+h3 {
+	font-family: var(--font-heading);
+}
+
+p {
+	font-family: var(--font-text);
+}
+
+li,
+a {
+	font-family: var(--font-accent);
+}
+
+/* General Styling of elements */
+
+h1 {
+	color: var(--clr-pale-green);
+}
+
+h2,
+h3 {
+	color: var(--clr-magenta);
+}
+
+p {
+	color: var(--clr-pale-gold);
+}
+
+li {
+	list-style: none;
+	color: var(--clr-white);
+	font-size: 1.25rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-magenta);
+}
+
+a:hover {
+	color: var(--clr-white);
 }
