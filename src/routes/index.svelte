@@ -3,18 +3,31 @@
 </svelte:head>
 
 <div class="main">
-	<h2 id="top">It's a Dog's Life</h2>
-	<p>
-		Dog Obedience Training is good for you and your dog. Your dog is your companion and a member of
-		your family, it is worth taking the time to learn how to better communicate with them. With
-		consistent practice and the proper techniques you can establish the foundation for an obedient
-		dog, which makes for a happy home.
-	</p>
-	<p>
-		Paula Mckenzie has been working with dogs for over 50 years. She has done it all, from breeding
-		to showing, grooming to training and everything in between. She has taught numerous people how
-		to work with their dogs, starting with beginners level all the way to advanced.
-	</p>
+	<div class="section-intro">
+		<div class="img-box">
+			<img src="../../static/images/three-good-boys.jpg" alt="dog" />
+		</div>
+		<div class="right-column">
+			<h2 id="top">It's a Dog's Life</h2>
+			<p>
+				Dog Obedience Training is good for you and your dog. Your dog is your companion and a member
+				of your family, it is worth taking the time to learn how to better communicate with them.
+				With consistent practice and the proper techniques you can establish the foundation for an
+				obedient dog, which makes for a happy home.
+			</p>
+			<p>
+				Paula Mckenzie has been working with dogs for over 50 years. She has done it all, from
+				breeding to showing, grooming to training and everything in between. She has taught numerous
+				people how to work with their dogs, starting with beginners level all the way to advanced.
+			</p>
+
+			<ul>
+				<li><a href="#expect">What to expect</a></li>
+				<li><a href="#learn">What you will learn</a></li>
+				<li><a href="#supplies">What you will need for class</a></li>
+			</ul>
+		</div>
+	</div>
 
 	<div class="section">
 		<h2 id="expect">What To Expect</h2>
@@ -62,4 +75,39 @@
 </div>
 
 <style>
+	.section-intro {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.img-box {
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+	img {
+		width: 100%;
+		margin: 1rem auto;
+	}
+
+	.right-column {
+		padding: 1rem;
+	}
+
+	.right-column li {
+		margin: 1rem 0;
+	}
+
+	.section-intro p {
+		margin: 1rem 0;
+		line-height: 1.5;
+	}
+
+	.section {
+		padding: 2rem 0;
+	}
+
+	.section p {
+		margin: 1rem 0;
+		line-height: 1.5;
+	}
 </style>
