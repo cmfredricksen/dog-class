@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Sansita+Swashed:wght@300&display=swap');
+@import 'material-icons/iconfont/material-icons.css';
 
 :root {
 	--font-heading: 'Sansita Swashed', sans-serif;
