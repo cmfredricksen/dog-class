@@ -4,17 +4,20 @@
 </script>
 
 <header>
-	<a href="/">
+	<a class="title" href="/">
 		<h1>Dog Class</h1>
+		<h2>with Paula</h2>
 	</a>
-	<a href="/">
+
+	<a href="/" class="center">
 		<i class="material-icons-outlined"> pets </i>
 	</a>
+
 	<Nav />
 </header>
 
 <style>
-	header {
+	/* header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -22,6 +25,14 @@
 		color: var(--clr-pale-green);
 		border-bottom: 2px solid var(--clr-pale-green);
 		outline: 1px solid var(--clr-white);
+	} */
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 1rem 1rem 2rem;
+		/* border-bottom: 2px solid var(--clr-pale-green); */
+		align-items: center;
 	}
 
 	header i {
@@ -38,5 +49,18 @@
 
 	header h1:hover {
 		color: var(--clr-white);
+	}
+
+	.title {
+		display: flex;
+		align-items: baseline;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	h2 {
+		margin: 0 0 0 0.5rem;
 	}
 </style>

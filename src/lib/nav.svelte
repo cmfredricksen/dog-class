@@ -22,4 +22,8 @@
 		text-decoration: none;
 		margin: 0 1rem;
 	}
+
+	nav {
+		text-align: right;
+	}
 </style>
